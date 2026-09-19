@@ -2,7 +2,7 @@
   color-scheme: dark;
   --orange: #ff671d;
   --ink: #111111;
-  --panel: #181818;
+  --panel: #242424;
   --white: #f7f7f4;
   --muted: #aaa9a4;
   --line: #373737;
@@ -14,7 +14,7 @@
 
 html {
   min-width: 320px;
-  background: var(--ink);
+  background: var(--panel);
 }
 
 body {
@@ -23,7 +23,7 @@ body {
   color: var(--white);
   background:
     radial-gradient(circle at 72% 18%, rgba(255, 103, 29, 0.11), transparent 29rem),
-    var(--ink);
+    var(--panel);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -125,7 +125,7 @@ h1 span {
   flex-direction: column;
   justify-content: space-between;
   gap: 0.8rem;
-  background: var(--ink);
+  background: var(--panel);
 }
 
 .status strong {
