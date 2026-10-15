@@ -13,7 +13,9 @@ Single static public landing page for Estate & Resale Service. The public headin
 
 ## Content and recovery
 
-The only contact link is `sms:+14402303901`. There are no forms, scripts, third-party fonts, analytics, or email integrations. The distinct `coming-soon.css` filename prevents returning browsers from applying a cached copy of the old stylesheet.
+The only contact link is `sms:+14402303901`. There are no forms, scripts, third-party fonts, analytics, or email integrations.
+
+All page styling is embedded in `index.html`, so the HTML and its design are delivered together. `coming-soon.css` and `styles.css` retain identical copies of the intended styling for browsers with an earlier cached HTML version. Keep those compatibility files and the embedded CSS synchronized when editing the design. The legacy `styles.css` URL must serve the current CSS, never a redirect or an HTML 404 response.
 
 The previous production source is preserved in Git at `30987e393cd9966f3968fd2860b1d54951a40e64`. Revert the replacement commit to restore it. Old branding assets are removed from the deployed tree. Do not put source archives or old public pages inside the publishing root.
 
